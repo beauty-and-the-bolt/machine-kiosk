@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "514536103270",
+    "firebase_url": "https://batb-ces.firebaseio.com",
+    "project_id": "batb-ces",
+    "storage_bucket": "batb-ces.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514536103270:android:f2985894148b8e5e",
+        "android_client_info": {
+          "package_name": "com.beautyandthebolt.app.activitytesting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514536103270-q8516g1sq0jcmqh59oitvsp7ohsgopfu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beautyandthebolt.app.activitytesting",
+            "certificate_hash": "e492506f7cdba2774be5e31df86f68426e636d33"
+          }
+        },
+        {
+          "client_id": "514536103270-8m7lkqc06i63d2esmq65e5r5gs82s91a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzb1fgi9MPidqVf6_c2YtNZ6G7l027sxQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514536103270-8m7lkqc06i63d2esmq65e5r5gs82s91a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

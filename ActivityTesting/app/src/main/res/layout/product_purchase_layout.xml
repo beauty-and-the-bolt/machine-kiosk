@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <EditText
+        android:id="@+id/orderFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/orderEmail"
+        app:layout_constraintEnd_toStartOf="@+id/orderLastName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/orderLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/orderPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/orderFirstName"
+        app:layout_constraintTop_toTopOf="@+id/orderFirstName" />
+
+    <EditText
+        android:id="@+id/orderPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="1-111-867-5309"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/orderLastName"
+        app:layout_constraintTop_toTopOf="@+id/orderLastName" />
+
+
+    <EditText
+        android:id="@+id/orderEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/orderShippingAddress"
+        app:layout_constraintEnd_toEndOf="@+id/orderPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/orderFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/orderFirstName" />
+
+    <EditText
+        android:id="@+id/orderShippingAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Shipping Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/orderCountry"
+        app:layout_constraintEnd_toEndOf="@+id/orderPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/orderFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/orderEmail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Checkout"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="@+id/orderFirstName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/orderCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cancelCheckoutButton"
+        app:layout_constraintEnd_toStartOf="@+id/orderCity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="@+id/orderFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/orderShippingAddress" />
+
+    <EditText
+        android:id="@+id/orderCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/orderZipcode"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/orderCountry"
+        app:layout_constraintTop_toTopOf="@+id/orderCountry" />
+
+    <EditText
+        android:id="@+id/orderZipcode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Zipcode"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/orderPhoneNumber"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/orderCity"
+        app:layout_constraintTop_toTopOf="@+id/orderCity" />
+
+    <Button
+        android:id="@+id/submitOrderButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"
+        app:layout_constraintEnd_toEndOf="@+id/orderZipcode"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelCheckoutButton"
+        app:layout_constraintTop_toTopOf="@+id/cancelCheckoutButton" />
+
+    <Button
+        android:id="@+id/cancelCheckoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitOrderButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/orderCountry"
+        app:layout_constraintTop_toBottomOf="@+id/orderCountry" />
+
+    <TextView
+        android:id="@+id/pretaxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Pre-tax Total:"
+        app:layout_constraintBottom_toTopOf="@+id/preTaxValue"
+        app:layout_constraintStart_toStartOf="@+id/preTaxValue" />
+
+    <TextView
+        android:id="@+id/preTaxValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/taxValue" />
+
+    <TextView
+        android:id="@+id/taxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Tax:"
+        app:layout_constraintBottom_toTopOf="@+id/taxValue"
+        app:layout_constraintStart_toStartOf="@+id/taxValue" />
+
+    <TextView
+        android:id="@+id/taxValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/shippingValue" />
+
+    <TextView
+        android:id="@+id/shippingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Shipping:"
+        app:layout_constraintBottom_toTopOf="@+id/shippingValue"
+        app:layout_constraintStart_toStartOf="@+id/shippingValue" />
+
+    <TextView
+        android:id="@+id/shippingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/totalValue" />
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Total:"
+        app:layout_constraintBottom_toTopOf="@+id/totalValue"
+        app:layout_constraintStart_toStartOf="@+id/totalValue" />
+
+    <TextView
+        android:id="@+id/totalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/orderPhoneNumber" />
+
+
+</android.support.constraint.ConstraintLayout>

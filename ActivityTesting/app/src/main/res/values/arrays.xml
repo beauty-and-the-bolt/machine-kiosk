@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="video_titles">
+        <item>Ultimaker</item>
+        <item>Laser Cutter</item>
+        <item>Mitre Saw</item>
+        <item>Soldering</item>
+        <item>Sewing Machine</item>
+        <item>Dremel</item>
+        <item>Drill Press</item>
+        <item>Hammer</item>
+        <item>Combination Square</item>
+        <item>Measuring + Marking</item>
+        <item>Arduino</item>
+        <item>Hand Drill</item>
+        <item>Jig Saw</item>
+        <item>Vinyl Cutter</item>
+        <item>Multimeter</item>
+        <item>Panel Saw</item>
+    </array>
+    <array name="video_uris">
+        <item>@raw/ultimaker</item>
+        <item>@raw/lasercut</item>
+        <item>@raw/mitre</item>
+        <item>@raw/solder</item>
+        <item>@raw/sewing</item>
+        <item>@raw/dremel</item>
+        <item>@raw/drillpress</item>
+        <item>@raw/hammer</item>
+        <item>@raw/combination</item>
+        <item>@raw/measuringmarking</item>
+        <item>@raw/arduino</item>
+        <item>@raw/handdrill</item>
+        <item>@raw/jigsaw</item>
+        <item>@raw/vinyl</item>
+        <item>@raw/multimeter</item>
+        <item>@raw/panelsaw</item>
+    </array>
+
+</resources>

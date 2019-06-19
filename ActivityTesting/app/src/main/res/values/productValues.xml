@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sweat_name">"Brilliant" Sweatshirt</string>
+    <string name="sweat_description">A unisex cut of first-ever Beauty and the Bolt Sweatshirt from our 2017 crowdsourcing campaign, this “Brilliant is Beautiful” designs helped fund our first 30 videos. </string>
+    <string name="uni_name">Unisex T-Shirt</string>
+    <string name="uni_description">The unisex cut of our first-ever Beauty and the Bolt T-Shirt from our 2017 crowdsourcing campaign, this “Brilliant is Beautiful” designs helped fund our first 30 videos</string>
+    <string name="womens_name" >Womens T-Shirt</string>
+    <string name="womens_description">The womens cut of our first-ever Beauty and the Bolt T-Shirt from our 2017 crowdsourcing campaign, this “Brilliant is Beautiful” designs helped fund our first 30 videos</string>
+    <string name="mug_name">"Brilliant" Mug</string>
+    <string name="mug_description">Mugs by Request! Awesome ceramic mugs available in 2 sizes - 11oz and 15oz - with our logo and “Brilliant is Beautiful” printed in full color!</string>
+    <string name="sock_name">#Engineer Socks</string>
+    <string name="sock_description">We’ve #Engineered a whole new way to keep your feet warm. JK. They’re just socks. Dang comfortable and stylish socks though.</string>
+    <string name="tote_name">Logo Tote</string>
+    <string name="tote_description">Not to “tote” our own horn, but we’re big fans of this BatB Logo tote bag, perfect for carrying groceries or materials!</string>
+</resources>
